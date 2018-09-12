@@ -1,0 +1,74 @@
+@media (min-width: 992px) and (max-width: 1007.00px) { 
+	.commentaire-map{
+		margin-bottom: 115px; }}
+
+@media (min-width: 1007px) and (max-width: 1360.00px) { 
+	.commentaire-map{
+		margin-bottom: 80px; }}
+
+@media (min-width: 1361px) {
+	.commentaire-map{
+		margin-bottom: 41px;
+	 }}
+
+.global{
+	display: flex;
+	justify-content: space-around;
+}
+
+.formulaire{	
+	width: 100%;
+}
+
+
+.form-control{
+	opacity: 0%;
+}
+	
+}
+
+.nunito-sans{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.titre{
+	font-family: 'Halant', serif;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 45px;
+
+}
+
+.commentaire-map{
+	font-style: italic;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+.commentaire-formulaire{
+	font-style: italic;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.nom{
+	margin-bottom: 5px;
+}
+
+.email{
+	margin-bottom: 5px;
+}
+
+.demandes{
+	margin-bottom: 5px;
+}
+
+.message{
+	margin-bottom: 5px;
+}
+
+.bouton{
+	margin-top: 16px;
+}
+

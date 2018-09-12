@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Halant" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+		<title>Contact</title>
+	</head>
+	<body>
+		<header>
+			<h2 class="titre">Contactez moi</h2>
+		</header>
+        <div class="container-fluid">
+        	<div class="row justify-content-around">
+	    		<section class="col-xs-12 col-sm-12 col-md-10 col-lg-5 formulaire">
+	    			<form method="post" action="traitement.php">
+	                    <legend class="commentaire-formulaire">
+	                        N'hésitez pas à me contacter pour toute demande, ou si vous souhaitez par exemple m'accompagner sur un parcours de photographie !
+	                    </legend>
+	    				<div class="form-control nom">
+	        				<label class="nunito-sans" for="name">Nom :</label>
+	                        <input id="name" type="text" class="form-control" placeholder="Votre nom ici" required>
+	                        
+	        			</div>
+	        			<div class="form-control email">
+	            			<label class="nunito-sans" for="mail">E-mail :</label>
+	                        <input id="email" type="email" class="form-control" placeholder="Votre e-mail ici" required>
+	        			</div>
+	        			<div class="form-control demandes">
+	                        <label class="nunito-sans" for="mail">Quel est l'objet de votre demande ?</label></br>
+	        				<select class="form-control">
+	        					<option value="Achat">Je souhaite acheter une photo</option>
+	        					<option value="Cours">Je souhaite participer à un cours</option>
+	        					<option value="Question">J'ai une question à propos d'une photo</option>
+	        					<option value="Autre">J'ai une autre demande</option>
+	        				</select>
+	        			</div>
+	       				<div class="form-control message">
+	            			<label class="nunito-sans" for="msg">Message :</label></br>
+	                        <textarea id="message" type="textarea" class="form-control" rows="10" placeholder="Votre message ici" required></textarea>
+	        				<button class="btn bouton">Envoyer</button>
+	        			</div>
+	    			</form>
+	    		</section>
+	    	<!-- Section de la google map avec son commentaire !-->
+	    		<section class="col-xs-12 col-sm-12 col-md-10 col-lg-5 map">
+	                <legend class="commentaire-map">
+	                    Si vous souhaitez venir me rendre visite pour discuter photographie...
+	                </legend>
+	                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4791971078043!2d2.35040595126236!3d48.84907197918492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e4f9ed9097%3A0x21f0557e9b283397!2sWild+Code+School+-+Formation+d%C3%A9veloppeur+web!5e0!3m2!1sfr!2sfr!4v1536499015089" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    		</section>
+
+	    	</div>
+	    	<!-- SCript JS !-->
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+</html>
