@@ -1,0 +1,32 @@
+
+
+hr {
+
+margin-top: 5vw;
+margin-bottom: 5vw;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 14px;
+}
+
+
+
+
+.miniature {
+
+    padding: 10px;
+}
+
+#my-toggle-button {
+	width: 5vw;
+	height: 5vw;
+}
+#mini-container {
+	text-align: center;
+	margin: 5vw;
+}
