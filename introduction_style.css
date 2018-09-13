@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;
 }
 
-
 .title, .baseline, .button {
   text-align: center;
   border: 2px  red;
@@ -19,7 +18,7 @@ body {
 .p_baseline, .p_button{
   font-size: 25px;
   font-family: 'Roboto Mono';
-  height: 40px;
+  border: 2px  blue;
 }
 
 .title{
@@ -27,51 +26,30 @@ body {
 }
 
 .p_title{
-  font-size: 60px;
-   width: 500px;
+  font-size: 50px;
    font-family: 'Space Mono';
    font-weight: bold;
 }
 
 .baseline{
   margin-top: 20px;
-  margin-left: 18%;
 }
 
 .p_baseline{
-   width: 800px;
 }  
 
 .button{
-  margin-top: 150px;
-  margin-left: 80%;
+  margin-top: 180px;
 }
 
 .p_button{
-  width: 180px;
   background-color: rgba(255,255,0);
   color:inherit;
 }
 
-/*baseline se décale sur taille smartphone L*/
-@media (max-width: 980px){
-  .baseline, .p_baseline{
-    width: 300px;
-    height: 100px;
-  }
-}
-
-/*bouton se décale sur taille tablette*/
-@media (max-width: 768px){
-  .button{
-    margin-left: 70%;
-  }
-}
-
-/*bouton se décale sur taille smartphone L*/
-@media (max-width: 425px){
-  .button{
-    margin-left: 60%;
+@media (max-width: 418px){
+  .p_title{
+    font-size: 39px;
   }
 }
 
