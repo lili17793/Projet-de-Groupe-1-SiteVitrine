@@ -22,7 +22,7 @@ body {
 }
 
 .title{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .p_title{
@@ -32,7 +32,7 @@ body {
 }
 
 .baseline{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .p_baseline{
@@ -53,3 +53,8 @@ body {
   }
 }
 
+@media (max-width: 900px){
+  .button{
+    margin-top: 150px;
+  }
+}
