@@ -3,13 +3,17 @@
 		margin-top: 31px;
 		margin-bottom: 13PX;}}
 
-@media (min-width: 992px) and (max-width: 1007.00px) { 
+@media (min-width: 992px) and (max-width: 1248.00px) { 
 	.commentaire-map{
-		margin-bottom: 115px; }}
+		margin-bottom: 40px; }}
 
-@media (min-width: 1007px) and (max-width: 1360.00px) { 
+@media (min-width: 1248.01px) and (max-width: 1286.00px) { 
 	.commentaire-map{
-		margin-bottom: 80px; }}
+		margin-bottom: 60px; }}
+
+@media (min-width: 1286.01px) and (max-width: 1360.00px) { 
+	.commentaire-map{
+		margin-bottom: 40px; }}
 
 @media (min-width: 1361px) {
 	.commentaire-map{
@@ -25,12 +29,15 @@
 	width: 100%;
 }
 
+.navbar-brand img{
+  width:50px;
+  margin:5%;
+}
 
-.form-control{
-	opacity: 0%;
+#navbarNavAltMarkup{
+  text-align:center;
 }
-	
-}
+
 
 .nunito-sans{
 	font-family: 'Nunito Sans', sans-serif;
