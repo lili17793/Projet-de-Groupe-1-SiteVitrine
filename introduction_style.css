@@ -1,0 +1,60 @@
+body {
+  background-image: url("http://image.noelshack.com/fichiers/2018/37/3/1536747223-paris-intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title, .baseline, .button {
+  text-align: center;
+  border: 2px  red;
+}
+
+.p_title, .p_baseline{
+  background-color: rgba(255,255,0,0.5);
+  border: 2px  blue;
+}
+
+.p_baseline, .p_button{
+  font-size: 25px;
+  font-family: 'Roboto Mono';
+  border: 2px  blue;
+}
+
+.title{
+  margin-top: 60px;
+}
+
+.p_title{
+  font-size: 50px;
+   font-family: 'Space Mono';
+   font-weight: bold;
+}
+
+.baseline{
+  margin-top: 40px;
+}
+
+.p_baseline{
+}  
+
+.button{
+  margin-top: 180px;
+}
+
+.p_button{
+  background-color: rgba(255,255,0);
+  color:inherit;
+}
+
+@media (max-width: 418px){
+  .p_title{
+    font-size: 39px;
+  }
+}
+
+@media (max-width: 900px){
+  .button{
+    margin-top: 150px;
+  }
+}
