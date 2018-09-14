@@ -1,4 +1,42 @@
 
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 14px;
+}
+
+
+.miniature {
+
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.miniature:hover{
+	opacity: 1;
+}
+
+#largeimage {
+	opacity: 0.8;
+}
+
+#largeimage:hover {
+	opacity: 1;
+}
+
+#button-container {
+	text-align: center;
+}
+#open-close-button {
+	border-radius: 100%;
+	margin: 2vw;
+}
+.modal-lg{
+	max-width: 68%;
+}
+
 
 
 hr {
@@ -15,7 +53,7 @@ hr {
 }
 
 .titlepictureright {
-	background-color: rgba(245,245,255, 0.8);
+	background-color: rgba(248,248,255, 0.8);
 	position: relative;
 	right: 7vw;
 	text-align: center;
@@ -24,7 +62,7 @@ hr {
 }
 
  .titlepictureleft {
-	background-color: rgba(245,245,255, 0.8);
+	background-color: rgba(248,248,255, 0.8);
 	position: relative;
 	left: 7vw;
 	text-align: center;
@@ -34,19 +72,11 @@ hr {
 } 	
  
 
-
- skfjhslkfjkjdshfkjdhsgf
- sdkfjghkjsfh
- skfjgksgkjdsf
-
-
 .text {
 	font-size: 15px;
 	text-align: justify;
 	margin-right: 10px;
 	margin-left: 10px;
-	
-}
 
 
 .minimap {
@@ -142,5 +172,4 @@ hr {
 
 }
 
-
-
+		
