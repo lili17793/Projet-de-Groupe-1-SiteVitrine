@@ -33,10 +33,11 @@ hr {
 
 .col-xl-9 img {
 	width: 100%;
+	padding: 10px;
 }
 
 .titlepictureright {
-	background-color: rgba(248,248,255, 0.8);
+	background-color: rgba(245,245,255, 0.8);
 	position: relative;
 	right: 7vw;
 	text-align: center;
@@ -45,7 +46,7 @@ hr {
 }
 
  .titlepictureleft {
-	background-color: rgba(248,248,255, 0.8);
+	background-color: rgba(245,245,255, 0.8);
 	position: relative;
 	left: 7vw;
 	text-align: center;
@@ -59,15 +60,17 @@ hr {
 .text {
 	font-size: 15px;
 	text-align: justify;
+	margin-right: 10px;
+	margin-left: 10px;
 	
 }
 
 
 .minimap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
-    min-width: 100px;
-    margin-right: 40%;
-    margin-left: 40%;
 }
 
 @media (min-width: 1350px) {
@@ -89,6 +92,8 @@ hr {
 	.text {
 		margin-top: 2vw;
 		text-align: justify;
+		margin-right: 10px;
+		margin-left: 10px;
 
 	}
 
@@ -109,6 +114,8 @@ hr {
 		left: 0vw;
 		text-align: center;
 		margin-top: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
 		}
 
 	.minimap {
@@ -124,6 +131,7 @@ hr {
  		width:80%;
  		margin:1em;
  		text-align: justify;
+ 		margin-right: 10px;
  	}
 
 }
@@ -139,10 +147,14 @@ hr {
 		left: 0vw;
 		text-align: center;
 		margin-top: 20px;
+		margin-right: 10px;
+		margin-left: 10px;
 		}
 
 	.text {
 		width:100%;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 }
