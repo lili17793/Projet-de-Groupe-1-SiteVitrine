@@ -25,6 +25,25 @@
 	justify-content: space-around;
 }
 
+
+.footer {
+    
+    color: black;
+    margin-top: 55px;
+    border: 3px red;
+    position: static;
+}
+
+.footer-copyright text-center py-3{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+	width: 14.5%;
+	padding-top: 30px;
+}
+
 .formulaire{	
 	width: 100%;
 }
@@ -53,14 +72,12 @@
 }
 
 .commentaire-map{
-	font-style: italic;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
 
 
 .commentaire-formulaire{
-	font-style: italic;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
