@@ -2,7 +2,13 @@
     
     color: black;
     margin-top: 55px;
-    position: static;
+}
+
+.d-flex{
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .footer-copyright text-center py-3{
@@ -11,6 +17,38 @@
 }
 
 .logo{
-	width: 14.5%;
 	padding-top: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
+
+.taille_image{
+	width: 30px;
+}
+
+@media (max-width: 830px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}

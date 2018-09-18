@@ -30,7 +30,6 @@
     
     color: black;
     margin-top: 55px;
-    border: 3px red;
 }
 
 .d-flex{
@@ -47,15 +46,42 @@
 }
 
 .logo{
-	
 	padding-top: 30px;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 .taille_image{
-	width: 40px;
+	width: 30px;
 }
+
+@media (max-width: 830px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}
+
 
 .formulaire{	
 	width: 100%;
