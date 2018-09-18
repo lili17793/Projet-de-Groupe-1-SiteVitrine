@@ -1,3 +1,12 @@
+.navbar-brand img{
+  width:50px;
+  margin:5%;
+}
+
+#navbarNavAltMarkup{
+  text-align:center;
+}
+
 h1 {
     font-family: Halant;
     font-size: 35px;
@@ -32,9 +41,27 @@ h4 {
     h4 {font-size: 15px;}
 }
 
+@media (max-width: 411px) { 
+    h1 {font-size: 25px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 15px;}
+    h4 {font-size: 10px;}
+    .dot {
+        padding-right: 10px;
+    }
+    .event_badge{
+        width: 100px;
+        align-items: center;
+    }
+}
+
+.container {
+    margin-top: 5%;
+}
+
 @media (max-width: 767px) { 
     .event_badge{
-        width: 300px;
+        width: 80%;
         align-items: center;
     }
     .event_title, .event_address {
@@ -47,19 +74,10 @@ h4 {
     .event{
         justify-content: center;
     }
-/*    h2 {font-size: 20px;}
-    h3 {font-size: 15px;}*/
 }
-
-/*@media (min-width: 768px) { 
-    .event{
-        flex-direction: row;
-    }
-}*/
 
 .event {
     flex-wrap: wrap;
-    /*padding-right: 15;*/
 }
 
 .dot {
@@ -108,28 +126,58 @@ h4 {
     align-items: center;
 }
 
-/*.wrapper_badge {
-    content:
-}*/
-
 .event_title {
     text-decoration: none;
-/*    text-decoration: none solid rgb(82, 82, 82);
-    outline: rgb(82, 82, 82) none 0px;*/
 
 }
 
 .event_address {
     text-decoration: none;
     outline:none;
-    /*text-decoration: none solid rgb(169, 169, 169);
-    outline: rgb(169, 169, 169) none 0px;*/
-
 }
 
 .event_hour {
     text-decoration: none;
     color: rgb(82, 82, 82);
-/*    outline: rgb(82, 82, 82) none 0px;*/
     height:100%;
 }
+
+#open-close-button {
+    border-radius: 100%;
+    margin: 2vw;
+}
+
+
+/* Arrow Button */
+.container-arrow {
+  margin-top: -20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  /*position: absolute;
+  bottom:0;left:0;*/
+  width:100%;
+  padding-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px; 
+}
+    
+.container-arrow:hover, .container-arrow:focus {
+  text-decoration: none;
+}
+
+/* Arrow Bouncing */
+.container-arrow span {
+  display: inline-block; 
+  font-size: 80px;  
+  animation: .7s down infinite alternate; 
+} 
+
+/***Animation Arrow down***/ 
+@keyframes down { 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} } 
+@-webkit-keyframes down{ 0%{-webkit-transform:translateY(0px)} 100%{-webkit-transform:translateY(20px)} } 
+        
+
