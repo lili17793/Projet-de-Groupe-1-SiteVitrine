@@ -7,22 +7,6 @@ p {
 }
 
 
-.miniature {
-
-    padding: 10px;
-}
-#button-container {
-	text-align: center;
-}
-#open-close-button {
-	border-radius: 100%;
-	margin: 2vw;
-}
-.modal-lg{
-	max-width: 68%;
-}
-
-
 hr {
 	width:70%;
 	color: black;
@@ -55,8 +39,6 @@ hr {
 	z-index: 1;
 } 	
  
-
-
 .text {
 	font-size: 15px;
 	text-align: justify;
@@ -65,12 +47,18 @@ hr {
 	
 }
 
-
 .minimap {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    border-radius: 10%;
+    
+}
+
+
+.minimap:hover {
+	border: 1px solid gray;
 }
 
 @media (min-width: 1350px) {
