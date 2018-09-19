@@ -1,6 +1,4 @@
 
-
-
 img {
 	width: 100%;
 }
@@ -9,6 +7,26 @@ p {
 	font-size: 14px;
 }
 
+.miniature {
+
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.miniature:hover{
+	opacity: 1;
+}
+
+#button-container1, #button-container2, #button-container3, #button-container4, #button-container5, #button-container6, #button-container7, #button-container8 {
+	text-align: center;
+}
+#open-close-button1, #open-close-button2, #open-close-button3, #open-close-button4, #open-close-button5, #open-close-button6, #open-close-button7, #open-close-button8 {
+	border-radius: 100%;
+	margin: 2vw;
+}
+.modal-lg{
+	max-width: 68%;
+}
 
 hr {
 	width:70%;
@@ -40,14 +58,14 @@ hr {
 	align-content: center;
 	margin: 4px;
 	z-index: 1;
-} 	
- 
+}
+
 .text {
 	font-size: 15px;
 	text-align: justify;
 	margin-right: 10px;
 	margin-left: 10px;
-	
+
 }
 
 figure {
@@ -70,7 +88,7 @@ figure img {
 	transition-property: transform;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
-	
+
 }
 
 figure:hover img {
@@ -88,54 +106,15 @@ figcaption {
 
 figure:hover figcaption {
 	color: #E99468;
-
 }
 
-
-
-/* Float 
-.hvr-float {
-
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-}*/
-
-/*
-@keyframes pop {
-  from {
-    font-size: 10px;
-  }
-
-  to {
-    font-size: 11px;
-    font-style: italic;
-  }
-}
 
 .minimap {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 20%;
-    border-radius: 10%;
-    
+    min-width: 100px;
+    margin-right: 40%;
+    margin-left: 40%;
 }
-
-
-.minimap:hover {
-	border: 1px solid gray;
-}*/
 
 @media (min-width: 1350px) {
 	.minimap {
@@ -168,7 +147,6 @@ figure:hover figcaption {
 		display: flex;
 		align-items: center;
 		}
-	
 
 	.titlepictureright, .titlepictureleft {
 		background-color: none;
@@ -217,11 +195,9 @@ figure:hover figcaption {
 
 	.text {
 		width:100%;
+
 		margin-right: 10px;
 		margin-left: 10px;
 	}
 
 }
-
-
-
