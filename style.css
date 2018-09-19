@@ -355,7 +355,7 @@ figure:hover figcaption {
     height: auto; }
   .infoBarPerso {
     font-size: 0.6em;
-    height: 12vh; }
+    height: auto; }
   .buttonPulseMobile {
     display: block; }
     .buttonPulseMobile p {
@@ -369,8 +369,7 @@ figure:hover figcaption {
   .map_nb_photos {
     font-size: 0.7em; }
   .infoBarPerso {
-    font-size: 1em;
-    height: 14vh; } }
+    font-size: 1em; } }
 
 @media screen and (min-width: 960px) {
   .text-left .col,
@@ -379,8 +378,7 @@ figure:hover figcaption {
   .map_nb_photos {
     font-size: 0.75em; }
   .infoBarPerso {
-    font-size: 1.2em;
-    height: 17vh; } }
+    font-size: 1.2em; } }
 
 @media screen and (min-width: 1140px) {
   .text-left .col,
