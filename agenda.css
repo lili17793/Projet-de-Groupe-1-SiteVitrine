@@ -1,12 +1,27 @@
-.navbar-brand img{
-  width:50px;
-  margin:5%;
+/*Header*/
+
+.navbar-brand img {
+    width: 50px;
+    margin: 5%; 
+}
+  
+#navbarNavAltMarkup {
+    text-align: center; 
 }
 
-#navbarNavAltMarkup{
-  text-align:center;
+.custom-toggler.navbar-toggler {
+    border: 0; 
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: none; 
+}
+
+.nav-link:hover {
+    color: #e99468 !important; 
+}
+
+/*Headers*/
 h1 {
     font-family: Halant;
     font-size: 35px;
@@ -34,52 +49,17 @@ h4 {
     font-style: normal;
 }
 
-@media (max-width: 992px) { 
-    h1 {font-size: 30px;}
-    h2 {font-size: 25px;}
-    h3 {font-size: 20px;}
-    h4 {font-size: 15px;}
-}
 
-@media (max-width: 411px) { 
-    h1 {font-size: 25px;}
-    h2 {font-size: 20px;}
-    h3 {font-size: 15px;}
-    h4 {font-size: 10px;}
-    .dot {
-        padding-right: 10px;
-    }
-    .event_badge{
-        width: 100px;
-        align-items: center;
-    }
-}
-
+/*Main divs*/
 .container {
     margin-top: 5%;
-}
-
-@media (max-width: 767px) { 
-    .event_badge{
-        width: 80%;
-        align-items: center;
-    }
-    .event_title, .event_address {
-        text-align: center;
-        justify-content: space-around;
-    }
-    .day {
-        padding-top: 15px;
-    }
-    .event{
-        justify-content: center;
-    }
 }
 
 .event {
     flex-wrap: wrap;
 }
 
+/*Day div */
 .dot {
     border-right: 5px solid rgb(224, 224, 224);
     position: relative;
@@ -112,6 +92,7 @@ h4 {
     border-radius: 50%;
 }
 
+/*Event div*/
 .date, .event_title, .event_hour, .wrapper_badge {
     color: rgb(82, 82, 82);
 }
@@ -126,6 +107,10 @@ h4 {
     align-items: center;
 }
 
+.event_time, .event_badge, .event_description {
+    margin-left:3vw;
+}
+
 .event_title {
     text-decoration: none;
 
@@ -136,15 +121,97 @@ h4 {
     outline:none;
 }
 
-.event_hour {
-    text-decoration: none;
-    color: rgb(82, 82, 82);
-    height:100%;
+.disabled {
+    pointer-events: none;
 }
 
-#open-close-button {
-    border-radius: 100%;
-    margin: 2vw;
+.grey {
+    background: rgba(128,128,128, 0.3) !important;
+}
+
+/* Tooltip container */
+.tip {
+    position: relative;
+}
+
+/* Tooltip text */
+.tip .tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tip .tiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tip:hover .tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/***Media queries***/
+@media (max-width: 992px) { 
+    h1 {font-size: 30px;}
+    h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
+    h4 {font-size: 15px;}
+}
+
+@media (max-width: 411px) { 
+    h1 {font-size: 25px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 15px;}
+    h4 {font-size: 10px;}
+    .dot {
+        /*padding-right: 5px;*/
+        padding-left: 10px;
+    }
+    .event_badge{
+        width: 100px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) { 
+    .event_badge{
+        width: 80%;
+        align-items: center;
+    }
+    .event_title, .event_address, .event_hour {
+        text-align: center;
+        justify-content: space-around;
+    }
+    .day {
+        padding-top: 15px;
+    }
+    .event{
+        justify-content: center;
+    }
 }
 
 
@@ -154,30 +221,93 @@ h4 {
   font-weight: bold;
   text-transform: uppercase;
   color:#000;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
   line-height: 40px;
-  /*position: absolute;
-  bottom:0;left:0;*/
   width:100%;
   padding-bottom: 15px;
   cursor: pointer;
   font-size: 12px; 
+
 }
     
 .container-arrow:hover, .container-arrow:focus {
   text-decoration: none;
 }
 
+.fa-angle-down, .fa-angle-up {
+    font-size: 50px;
+}
+
 /* Arrow Bouncing */
 .container-arrow span {
-  display: inline-block; 
+  display: inline-block;
+  text-align: center; 
   font-size: 80px;  
   animation: .7s down infinite alternate; 
-} 
+}
+
 
 /***Animation Arrow down***/ 
 @keyframes down { 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} } 
 @-webkit-keyframes down{ 0%{-webkit-transform:translateY(0px)} 100%{-webkit-transform:translateY(20px)} } 
+
+
+/* Footer */
+.footer {
+    
+    color: black;
+    margin-top: 55px;
+}
+
+.footer .d-flex{
+    width:100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-copyright text-center py-3{
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.taille_image{
+    width: 30px;
+}
+
+@media (max-width: 830px) { 
+    .taille_image{
+        width: 30px; }
+
+    .logo{
+        padding-top: 30px;
+        margin-left: 35px;
+        margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+    .taille_image{
+        width: 25px; }
+
+    .logo{
+        padding-top: 30px;
+        margin-left: 35px;
+        margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+    .taille_image{
+        width: 25px; }
+
+    .logo{
+        padding-top: 28px;
+        margin-left: 18px;
+        margin-right: 18px;}}
+
         
 
