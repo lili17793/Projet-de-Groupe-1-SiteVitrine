@@ -17,18 +17,10 @@ p {
 	opacity: 1;
 }
 
-#largeimage {
-	opacity: 0.8;
-}
-
-#largeimage:hover {
-	opacity: 1;
-}
-
-#button-container {
+#button-container1, #button-container2, #button-container3, #button-container4, #button-container5, #button-container6, #button-container7, #button-container8 {
 	text-align: center;
 }
-#open-close-button {
+#open-close-button1, #open-close-button2, #open-close-button3, #open-close-button4, #open-close-button5, #open-close-button6, #open-close-button7, #open-close-button8 {
 	border-radius: 100%;
 	margin: 2vw;
 }
@@ -66,14 +58,14 @@ hr {
 	align-content: center;
 	margin: 4px;
 	z-index: 1;
-} 	
- 
+}
+
 
 
 .text {
 	font-size: 15px;
 	text-align: justify;
-	
+
 }
 
 
@@ -113,7 +105,7 @@ hr {
 		display: flex;
 		align-items: center;
 		}
-	
+
 
 	.titlepictureright, .titlepictureleft {
 		background-color: none;
