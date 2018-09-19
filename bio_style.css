@@ -77,13 +77,9 @@ p{
 
 .bio_col_3_reseaux{
 	text-align: center;
+	margin-top: 20px;
 }
 
-.bio_fb, .bio_insta{
-	width: 40px;
-	margin-left: 5px;
-	margin-right: 5px;
-}
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-12, .col-md, .col-lg, .col-sm-12, .col-md-12, .col-xl-7, .col-lg-5, .col-xl-5{
 /*	border: 1px solid red;*/
@@ -94,3 +90,62 @@ p{
     margin-right: 0;
   }
 }
+
+
+/*PARTIE FOOTER*/
+
+
+.footer {
+    
+    color: black;
+    margin-top: 55px;
+}
+
+.d-flex{
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer-copyright text-center py-3{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+	padding-top: 0px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.taille_image{
+	width: 30px;
+}
+
+@media (max-width: 830px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}

@@ -12,58 +12,6 @@
 
 		<title>Biographie</title>
 
-<!--
-		<script>
-// Par Oznog, trucsweg.com
-// http://trucsweb.com/tutoriels/javascript/defilement_doux
-document.addEventListener('DOMContentLoaded', function() {
-  var aLiens = document.querySelectorAll('a[href*="#"]');
-  for(var i=0, len = aLiens.length; i<len; i++) {
-    aLiens[i].onclick = function () {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = this.getAttribute("href").slice(1);
-        if (target.length) {
-          scrollTo(document.getElementById(target).offsetTop, 1000);
-          return false;
-        }
-      }
-    };
-  }
-});
-//Exemple de : Forestrf
-// http://jsfiddle.net/forestrf/tPQSv/2/
-function scrollTo(element, duration) {
-  var e = document.documentElement;
-  if(e.scrollTop===0){
-    var t = e.scrollTop;
-    ++e.scrollTop;
-    e = t+1===e.scrollTop--?e:document.body;
-  }
-  scrollToC(e, e.scrollTop, element, duration);
-}
-
-function scrollToC(element, from, to, duration) {
-  if (duration < 0) return;
-  if(typeof from === "object")from=from.offsetTop;
-  if(typeof to === "object")to=to.offsetTop;
-  scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
-}
-
-function scrollToX(element, x1, x2, t, v, step, operacion) {
-  if (t < 0 || t > 1 || v <= 0) return;
-  element.scrollTop = x1 - (x1-x2)*operacion(t);
-  t += v * step;
-  setTimeout(function() {
-    scrollToX(element, x1, x2, t, v, step, operacion);
-  }, step);
-}
-
-function easeOutCuaic(t){
-  t--;
-  return t*t*t+1;
-}
-</script> -->
-
 	</head>
 	<body>
 		<header>
@@ -84,10 +32,6 @@ function easeOutCuaic(t){
 		    </nav>
 		</header>
 		<section class="biographie">
-
-
-
-
 
 			<h2>Biographie</h2>
 
@@ -116,17 +60,41 @@ function easeOutCuaic(t){
 		<div class="container-fluid container_bio">
 			<div class="row">
          	   	<div class="col bio_col_3_reseaux">
-             	   	<p>Retrouvez mon travail sur ma page Facebook et mon compte Instagram</p>
-             	   	<a href="https://www.facebook.com/WIldo-coda-495506157477837/" target="_blank"><img class="bio_fb" src="http://www.le-monde-du-stickers.fr/1726-large/sticker-logo-facebook.jpg" alt="Facebook"></a>
-					<a href="https://www.instagram.com/wildo_coda/?hl=fr" target="_blank"><img class="bio_insta" src="https://legroupesleipnir.com/wp-content/uploads/2018/01/logo-instagram.jpg" alt="Instagram"></a>
+             	   	<p>Retrouvez mon travail sur les réseaux sociaux !</p>
          	   </div>
          	</div>
          </div>
-
-
 				
 		</section>
 		
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="d-flex">
+					<ul class="list-inline">
+						<li class="list-inline-item logo">
+							<a href="http://pinterest.com" title="Suivez-moi sur pinterest !"><img class="taille_image" src="intro_et_bio_images/pinterest.png" alt="pinterest"/></a>
+						</li>
+						<li class="list-inline-item logo">
+							<a href="http://youtube.com" title="Suivez-moi sur youtube !"><img class="taille_image" src="intro_et_bio_images/youTube.png" alt="youTube"/></a>
+						</li>
+						<li class="list-inline-item logo">
+							<a href="http://twitter.com" title="Suivez-moi sur twitter !"><img class="taille_image" src="intro_et_bio_images/twitter.png" alt="twitter"/></a>
+						</li>
+						<li class="list-inline-item logo">
+							<a href="http://facebook.com" title="Suivez-moi sur facebook !"><img class="taille_image" src="intro_et_bio_images/facebook.png" alt="facebook"/></a>
+						</li>
+						<li class="list-inline-item logo">
+							<a href="http://instagram.com" title="Suivez-moi sur instagram !"><img class="taille_image" src="intro_et_bio_images/instagram.png" alt="instagram"/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="d-flex">
+					<div class="footer-copyright text-center py-3">© 2018 Wildo Coda - All rights reserved.
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
