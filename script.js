@@ -94,5 +94,5 @@ $("#open-close-button").click(function() {
     }, 1500);
 });
 
-document.getElementByClass('')
+
 
