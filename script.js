@@ -95,9 +95,9 @@ $("#open-close-button").click(function() {
 });
 
 
-const maFonction = (iNum, iEl) => {
+const activate = (iNum, iCl) => {
 
-  const activeItem = $('.active' + iEl);
+  const activeItem = $('.active' + iCl);
 
   if (activeItem.length > 0) {
     for (let i=0; i<activeItem.length; i++) {
@@ -106,7 +106,7 @@ const maFonction = (iNum, iEl) => {
 
   }
 
-  const carrousselItems = $(iEl);
+  const carrousselItems = $(iCl);
   carrousselItems[iNum].classList.add('active');
 }
 
