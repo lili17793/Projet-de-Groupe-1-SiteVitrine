@@ -389,3 +389,94 @@ figure:hover figcaption {
     font-size: 1.25em; }
   .map_nb_photos {
     font-size: 1em; } }
+
+
+
+/* FOOTER */
+
+footer.css
+Détails
+Activité
+footer.css
+Informations de partage
+M
+
+E
+
+T
+Informations générales
+Type
+Feuille de style
+Taille
+754 octets
+Espace utilisé
+0 octetÉléments appartenant à undefined
+Emplacement
+footer
+Propriétaire
+Mariage Barreto
+Modifié
+le 09:03 par Mariage Barreto
+Ouvert
+le 15:08 par moi
+Créé le
+09:03
+Description
+Ajouter une description
+Autorisations de téléchargement
+Les lecteurs peuvent télécharger
+Optimisé Tous les éléments ont été désélectionnés. Tous les éléments ont été désélectionnés.
+
+.footer { 
+    color: black;
+    margin-top: 55px;
+}
+
+.footer .d-flex{
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer-copyright text-center py-3{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+	padding-top: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.taille_image{
+	width: 30px;
+}
+
+@media (max-width: 830px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}
