@@ -15,20 +15,22 @@
 		</head>
 		<body>
 			<header>
-				<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #595959;">
-					<a class="navbar-brand ml-4" href="#">Wildo <img src="http://image.noelshack.com/fichiers/2018/37/5/1536913293-logo.png" alt="Logo"> Coda</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
-							<a class="nav-item nav-link" href="#">Accueil</a>
-							<a class="nav-item nav-link" href="#">Bio</a>
-							<a class="nav-item nav-link" href="#">Agenda</a>
-							<a class="nav-item nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
-						</div>
-					</div>
-				</nav>
+				<!-- HEADER NAVBAR-->
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2e3131;">
+			    <a class="navbar-brand ml-4" href="#">Wildo <img src="images/logo.png" alt="Logo"> Coda</a>
+			    <button id="collapsible" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"><img src="images/menuIcon.svg" alt="" id="buttonNavBarPerso"></span>
+			    </button>
+			    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			        <div class="navbar-nav">
+			            <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+			            <a class="nav-item nav-link" href="#">Bio</a>
+			            <a class="nav-item nav-link" href="#">Agenda</a>
+			            <a class="nav-item nav-link" href="#">Contact</a>
+			        </div>
+			    </div>
+			</nav>
 				<h2 class="titre">Contactez moi</h2>
 			</header>
 			<div class="container-fluid wrap">
@@ -79,19 +81,19 @@
 					<div class="d-flex">
 						<ul class="list-inline">
 							<li class="list-inline-item logo">
-								<a href="http://pinterest.com" title="Suivez-moi sur pinterest !"><img class="taille_image" src="image/pinterest.png" alt="pinterest"/></a>
+								<a href="http://pinterest.com" title="Suivez-moi sur pinterest !"><img class="taille_image" src="images/pinterest.png" alt="pinterest"/></a>
 							</li>
 							<li class="list-inline-item logo">
-								<a href="http://youtube.com" title="Suivez-moi sur youtube !"><img class="taille_image" src="image/youTube.png" alt="youTube"/></a>
+								<a href="http://youtube.com" title="Suivez-moi sur youtube !"><img class="taille_image" src="images/youTube.png" alt="youTube"/></a>
 							</li>
 							<li class="list-inline-item logo">
-								<a href="http://twitter.com" title="Suivez-moi sur twitter !"><img class="taille_image" src="image/twitter.png" alt="twitter"/></a>
+								<a href="http://twitter.com" title="Suivez-moi sur twitter !"><img class="taille_image" src="images/twitter.png" alt="twitter"/></a>
 							</li>
 							<li class="list-inline-item logo">
-								<a href="http://facebook.com" title="Suivez-moi sur facebook !"><img class="taille_image" src="image/facebook.png" alt="facebook"/></a>
+								<a href="http://facebook.com" title="Suivez-moi sur facebook !"><img class="taille_image" src="images/facebook.png" alt="facebook"/></a>
 							</li>
 							<li class="list-inline-item logo">
-								<a href="http://instagram.com" title="Suivez-moi sur instagram !"><img class="taille_image" src="image/instagram.png" alt="instagram"/></a>
+								<a href="http://instagram.com" title="Suivez-moi sur instagram !"><img class="taille_image" src="images/instagram.png" alt="instagram"/></a>
 							</li>
 						</ul>
 					</div>
@@ -105,5 +107,7 @@
 			<script type="text/javascript" src="js/form-scripts.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="navbar.js"></script>
+
 		</body>
 	</html>
