@@ -42,7 +42,7 @@
             <!-- d-none d-md-block permet de masquer colonne sur ecran xs et md -->
             <div class="row justify-content-end mb-2">
               <div class="row no-gutters">
-                <div class="col map_name_mon-l"><a class="animate_link" id="linkArcTriomphe" href="#arc-section" onmouseenter='showMapMonument("ArcTriomphe")'
+                <div class="col map_name_mon-l"><a id="linkArcTriomphe" href="#arc-section" onmouseenter='showMapMonument("ArcTriomphe")'
                 onmouseleave='hideMapMonument("ArcTriomphe")'>Arc de triomphe</a></div>
               </div>
               <div class="row w-100 align-items-center no-gutters">
@@ -120,7 +120,7 @@
                             <!-- d-none d-md-block permet de masquer colonne sur ecran xs et md-->
                             <div class="row justify-content-start mb-2">
                               <div class="row no-gutters">
-                                <div class="col map_name_mon-r"><a href="#petitp-section" onmouseenter='showMapMonument("PetitPalais")'
+                                <div class="col map_name_mon-r"><a id="linkPetitPalais" href="#petitp-section" onmouseenter='showMapMonument("PetitPalais")'
                                 onmouseleave='hideMapMonument("PetitPalais")'>Le Petit Palais</a></div>
                               </div>
                               <div class="row w-100 align-items-center no-gutters">
@@ -169,7 +169,7 @@
                           </div>
                         </div>
                         <!-- Button mobile-->
-                        <div class="row h-100 buttonPulseMobile">
+                        <div class="row buttonPulseMobile">
                           <div class="col d-flex justify-content-center">
                             <button class="button button--pluse"></button>
                           </div>
@@ -180,7 +180,7 @@
                       </div>
                       <!-- Infos barre -->
                       <div class="container-fluid infoBarPerso">
-                        <div class="row justify-content-around text-center h-100">
+                        <div class="row h-auto justify-content-around text-center">
                           <div class="col-4 align-self-center infoBar_Col_Left">
                             <p>Photos prises dans Paris</p>
                             <p id="infobar_nbPhoto">13265</p>
@@ -328,7 +328,7 @@
                         <!-- COLONNE DE JUILLET -->
                         <section id="colonne-section">
                           <div class="row">
-                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1">
+                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal2">
                               <img src="images/colonne00.jpg" alt="Colonne de Juillet">
                             </div>
                             <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
@@ -420,10 +420,10 @@
                         <!-- MUSEE DU LOUVRE -->
                         <section id="musee-section">
                           <div class="row">
-                            <div class="col-xl-9   col-md-12">
-                              <img src="images/louvre00.jpg" alt="Musée du Louvre">
+                            <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal3">
+                              <img src="images/m-louvre03.jpg" alt="Musée du Louvre">
                             </div>
-                            <div class="col-xl-3  align-self-center  col-md-12 ">
+                            <div class="col-xl-3  align-self-center  col-md-12">
                               <h3 class="titlepictureright">Musée du Louvre</h3>
                               <div class="containerfextablette">
                                 <p class="text">Le musée du Louvre, inauguré en 1793 sous l'appellation Muséum central des arts de la République dans le palais du Louvre, ancienne résidence royale située au centre de Paris, est aujourd'hui le plus grand musée d'art et d'antiquités au monde. Sa surface d'exposition est de 72 735 m2</p>
@@ -554,7 +554,7 @@
                         <!-- NOTRE DAME DE PARIS-->
                         <section id="notredame-section">
                           <div class="row">
-                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1">
+                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal4">
                               <img src="images/m-notredame00.jpg" alt="Notre-Dame de Paris">
                             </div>
                             <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
@@ -664,7 +664,7 @@
                         <!-- LE PETIT PALAIS -->
                         <section id="petitp-section">
                           <div class="row">
-                            <div class="col-xl-9   col-md-12">
+                            <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal5">
                               <img src="images/m-petitpalais00.jpg" alt="Le Petit Palais">
                             </div>
                             <div class="col-xl-3  align-self-center  col-md-12 ">
@@ -786,7 +786,7 @@
                         <!-- Pont Alexandre-III-->
                         <section id="pont-section">
                           <div class="row">
-                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1">
+                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal6">
                               <img src="images/m-pont00.jpg" alt="Pont Alexandre-III">
                             </div>
                             <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
@@ -902,7 +902,7 @@
                         <!-- SACRE COEUR -->
                         <section id="sacre-section">
                           <div class="row">
-                            <div class="col-xl-9   col-md-12">
+                            <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal7">
                               <img src="images/m-sacrecoeur00.jpg" alt="Basilique du Sacré-Cœur">
                             </div>
                             <div class="col-xl-3  align-self-center  col-md-12 ">
@@ -1030,7 +1030,7 @@
                         <!-- TOUR EIFFEL-->
                         <section id="tour-section">
                           <div class="row">
-                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1">
+                            <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal8">
                               <img src="images/m-toureiffel00.jpg" alt="Tour Eiffel">
                             </div>
                             <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">

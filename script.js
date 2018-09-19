@@ -95,12 +95,6 @@ $("#open-close-button").click(function() {
 });
 
 
-
-// document.getElementsByClassName('miniature largeimage').addEventListener("click", mafonction);
-// mettre ma fonction (1 arg)
-// event.target
-
-
 const maFonction = (iNum, iEl) => {
 
   const activeItem = $('.active' + iEl);
@@ -111,7 +105,6 @@ const maFonction = (iNum, iEl) => {
     }
 
   }
-
 
   const carrousselItems = $(iEl);
   carrousselItems[iNum].classList.add('active');

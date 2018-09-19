@@ -16,7 +16,7 @@ $('.animate_link').click(function(){
 
 let nbPhotosInfoBar = 13265;
 let nbKmInfoBar = 6827;
-
+let source ="";
 
 // Increase items info barre
 const increaseNbPhoto = () => {
@@ -38,7 +38,7 @@ const showMapMonument = (source) => {
 
 const hideMapMonument = (source) => {
     document.getElementById("link"+source).style.color="#2e3131";
-    document.getElementById('mapParisBase').src = "images/mapParis.png";
+    document.getElementById('mapParisBase').src = "images/MapParis.png";
 }
 
 
