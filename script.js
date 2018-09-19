@@ -94,5 +94,28 @@ $("#open-close-button").click(function() {
     }, 1500);
 });
 
-document.getElementByClass('')
+
+
+// document.getElementsByClassName('miniature largeimage').addEventListener("click", mafonction);
+// mettre ma fonction (1 arg)
+// event.target
+
+
+const maFonction = (iNum, iEl) => {
+
+  const activeItem = $('.active' + iEl);
+
+  if (activeItem.length > 0) {
+    for (let i=0; i<activeItem.length; i++) {
+      activeItem[i].classList.remove('active');
+    }
+
+  }
+
+
+  const carrousselItems = $(iEl);
+  carrousselItems[iNum].classList.add('active');
+}
+
+
 
