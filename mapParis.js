@@ -4,12 +4,18 @@ $(document).ready(function(e) {
     setInterval(increaseNbPhoto, 3000);
 });
 
+// fonction scroll ancre
+$('.animate_link').click(function(){
+    let id_ancre = $(this).attr("href");
+    let offset_ancre = $(id_ancre).offset().top;
+    $('html, body').animate({scrollTop: offset_ancre}, 'slow');
+});
+
 
 // Variables
 
 let nbPhotosInfoBar = 13265;
 let nbKmInfoBar = 6827;
-
 
 
 // Increase items info barre
