@@ -1,11 +1,22 @@
-.navbar-brand img{
-  width:50px;
-  margin:5%;
-}
+/*Barre de navigation*/
 
-#navbarNavAltMarkup{
-  text-align:center;
-}
+.navbar-brand img {
+    width: 50px;
+    margin: 5%; }
+  
+#navbarNavAltMarkup {
+text-align: center; }
+
+.custom-toggler.navbar-toggler {
+border: 0; }
+
+.custom-toggler .navbar-toggler-icon {
+background-image: none; }
+
+.nav-link:hover {
+color: #e99468 !important; }
+
+
 
 
 .biographie{
