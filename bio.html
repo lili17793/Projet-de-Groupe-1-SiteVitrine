@@ -10,11 +10,64 @@
 		<style>@import url('https://fonts.googleapis.com/css?family=Halant');</style>
 		<style>@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');</style>
 
-		<title>Document</title>
+		<title>Biographie</title>
+
+<!--
+		<script>
+// Par Oznog, trucsweg.com
+// http://trucsweb.com/tutoriels/javascript/defilement_doux
+document.addEventListener('DOMContentLoaded', function() {
+  var aLiens = document.querySelectorAll('a[href*="#"]');
+  for(var i=0, len = aLiens.length; i<len; i++) {
+    aLiens[i].onclick = function () {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = this.getAttribute("href").slice(1);
+        if (target.length) {
+          scrollTo(document.getElementById(target).offsetTop, 1000);
+          return false;
+        }
+      }
+    };
+  }
+});
+//Exemple de : Forestrf
+// http://jsfiddle.net/forestrf/tPQSv/2/
+function scrollTo(element, duration) {
+  var e = document.documentElement;
+  if(e.scrollTop===0){
+    var t = e.scrollTop;
+    ++e.scrollTop;
+    e = t+1===e.scrollTop--?e:document.body;
+  }
+  scrollToC(e, e.scrollTop, element, duration);
+}
+
+function scrollToC(element, from, to, duration) {
+  if (duration < 0) return;
+  if(typeof from === "object")from=from.offsetTop;
+  if(typeof to === "object")to=to.offsetTop;
+  scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
+}
+
+function scrollToX(element, x1, x2, t, v, step, operacion) {
+  if (t < 0 || t > 1 || v <= 0) return;
+  element.scrollTop = x1 - (x1-x2)*operacion(t);
+  t += v * step;
+  setTimeout(function() {
+    scrollToX(element, x1, x2, t, v, step, operacion);
+  }, step);
+}
+
+function easeOutCuaic(t){
+  t--;
+  return t*t*t+1;
+}
+</script> -->
 
 	</head>
 	<body>
 		<header>
+
 			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2e3131;">
 		      <a class="navbar-brand ml-4" href="#">Wildo <img src="http://image.noelshack.com/fichiers/2018/37/5/1536913293-logo.png" alt="Logo"> Coda</a>
 		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,13 +92,14 @@
 			<h2>Biographie</h2>
 
 			<div class="container-fluid container_bio">
-	            <div class="row">
+	            <div class="row align-items-center">
 	            	<!--COLONNE AVEC LA PHOTO-->	
              	   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 bio_col_1_photo">
-						<img class="bio_photo" src="http://image.noelshack.com/fichiers/2018/37/5/1536911389-wildo.jpg" alt="Wildo Coda">
+             	   		<img class="bio_photo_objectif" src="intro_et_bio_images/objectif2.jpg" alt="Objectif photo">
+						<img class="bio_photo_wildo" src="intro_et_bio_images/wildo.jpg" alt="Wildo Coda">
 					</div>
 					<!--COLONNE AVEC LA BIO-->
-					<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 bio_col_2_content">
+					<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6  bio_col_2_content">
 						<p class="bio_content"><i>« En outre à Paris, si l’on fait attention vraiment, on perçoit à chaque pas la pulsation d’un grand coeur sous sa semelle » </i><br>
 						Henri Calet</p>
 						<p class="bio_content">C’est exactement la sensation que je ressens en vagabondant dans les rues de Paris. La sensation d’être au coeur du monde.</p>
@@ -77,15 +131,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	
+	<!--
 	<script type="text/javascript">
 		$( ".bio_photo" ).hover(
 		function(){
-			$(this).attr("src", "http://image.noelshack.com/fichiers/2018/37/5/1536911393-objectif.jpg");
+			$(this).attr("src", "intro_et_bio_images/objectif.jpg");
 		}, function() {
-			$(this).attr("src", "http://image.noelshack.com/fichiers/2018/37/5/1536911389-wildo.jpg");
+			$(this).attr("src", "intro_et_bio_images/wildo.jpg");
 		} 
 		 );
 	</script>
+	-->
 	</body>
 	
 </html>
