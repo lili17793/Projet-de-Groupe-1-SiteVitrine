@@ -112,8 +112,7 @@ figure:hover figcaption {
 .minimap {
     width: 20%;
     min-width: 100px;
-    margin-right: 40%;
-    margin-left: 40%;
+
 }
 
 @media (min-width: 1350px) {
@@ -195,7 +194,6 @@ figure:hover figcaption {
 
 	.text {
 		width:100%;
-
 		margin-right: 10px;
 		margin-left: 10px;
 	}
