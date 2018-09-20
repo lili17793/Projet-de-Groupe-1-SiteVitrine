@@ -32,7 +32,10 @@ p {
 	margin: 2vw;
 }
 .modal-lg{
-	max-width: 68%;
+	/*max-width: 68%;*/
+	overflow-y: auto;
+    max-height: none;
+    padding: 15px;
 }
 
 section hr {
