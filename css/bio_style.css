@@ -1,0 +1,162 @@
+/*Barre de navigation*/
+
+.navbar-brand img {
+    width: 50px;
+    margin: 5%; }
+  
+#navbarNavAltMarkup {
+text-align: center; }
+
+.custom-toggler.navbar-toggler {
+border: 0; }
+
+.custom-toggler .navbar-toggler-icon {
+background-image: none; }
+
+.nav-link:hover {
+color: #e99468 !important; }
+
+
+
+
+.biographie{
+	margin-left : 20px;
+	margin-right: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+h2{
+	text-align: center;
+	font-family: "Halant";
+}
+
+p{
+	font-family: "Nunito Sans";
+}
+
+.container_bio{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	/*border: 1px solid pink;*/
+}
+
+.bio_col_1_photo{
+	text-align: center;
+}
+
+.bio_photo_wildo{
+	width: 100%;
+	max-width: 450px;
+	border-radius: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	z-index: 1;
+
+}
+
+.bio_photo_objectif{
+	width: 100%;
+	max-width: 450px;
+	border-radius: 0%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 0.15s ease-in;
+}
+
+.bio_col_1_photo:hover .bio_photo_objectif{
+	opacity: 1;
+}
+
+.bio_col_1_photo:hover .bio_photo_wildo{
+	opacity: ;
+}
+
+.bio_col_2_content{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 900px;
+}
+
+.bio_content{
+	margin-right: 50px;
+}
+
+.bio_col_3_reseaux{
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-12, .col-md, .col-lg, .col-sm-12, .col-md-12, .col-xl-7, .col-lg-5, .col-xl-5{
+/*	border: 1px solid red;*/
+}
+
+@media (max-width: 991px){
+  .bio_content{
+    margin-right: 0;
+  }
+}
+
+
+/*PARTIE FOOTER*/
+
+
+.footer {
+    
+    color: black;
+    margin-top: 55px;
+}
+
+.d-flex{
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer-copyright text-center py-3{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+	padding-top: 0px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.taille_image{
+	width: 30px;
+}
+
+@media (max-width: 830px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}
