@@ -1,5 +1,3 @@
-
-
 function toTop() {
 	window.scroll({
   		top: 0,
@@ -109,6 +107,3 @@ const activate = (iNum, iCl) => {
   const carrousselItems = $(iCl);
   carrousselItems[iNum].classList.add('active');
 }
-
-
-

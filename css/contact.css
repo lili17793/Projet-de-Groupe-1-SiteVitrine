@@ -1,0 +1,149 @@
+@media (max-width: 991.99px) {
+	.commentaire-map{
+		margin-top: 31px;
+		margin-bottom: 13PX;}}
+
+@media (min-width: 992px) and (max-width: 1248.00px) { 
+	.commentaire-map{
+		margin-bottom: 40px; }}
+
+@media (min-width: 1248.01px) and (max-width: 1286.00px) { 
+	.commentaire-map{
+		margin-bottom: 60px; }}
+
+@media (min-width: 1286.01px) and (max-width: 1360.00px) { 
+	.commentaire-map{
+		margin-bottom: 40px; }}
+
+@media (min-width: 1361px) {
+	.commentaire-map{
+		margin-bottom: 41px;
+	 }}
+
+.global{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.footer {
+    
+    color: black;
+    margin-top: 55px;
+}
+
+.footer .d-flex{
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+.footer-copyright text-center py-3{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.logo{
+	padding-top: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.taille_image{
+	width: 30px;
+}
+
+@media (max-width: 845px) { 
+	.taille_image{
+		width: 30px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 650px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 30px;
+		margin-left: 35px;
+		margin-right: 35px;}}
+
+@media (max-width: 416px) { 
+	.taille_image{
+		width: 25px; }
+
+	.logo{
+		padding-top: 28px;
+		margin-left: 18px;
+		margin-right: 18px;}}
+
+
+.formulaire{	
+	width: 100%;
+}
+
+.navbar-brand img {
+    width: 50px;
+    margin: 5%; }
+  
+  #navbarNavAltMarkup {
+    text-align: center; }
+  
+  .custom-toggler.navbar-toggler {
+    border: 0; }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: none; }
+  
+  .nav-link:hover {
+    color: #e99468 !important; }
+
+
+.nunito-sans{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.titre{
+	font-family: 'Halant', serif;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 45px;
+
+}
+
+.commentaire-map{
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+.commentaire-formulaire{
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.nom{
+	margin-bottom: 5px;
+}
+
+.email{
+	margin-bottom: 5px;
+}
+
+.demandes{
+	margin-bottom: 5px;
+}
+
+.message{
+	margin-bottom: 5px;
+}
+
+.bouton{
+	margin-top: 16px;
+}
+
