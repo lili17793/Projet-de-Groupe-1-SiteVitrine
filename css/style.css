@@ -423,7 +423,7 @@ figure:hover figcaption {
 	width: 30px;
 }
 
-@media (max-width: 830px) { 
+@media (max-width: 845px) { 
 	.taille_image{
 		width: 30px; }
 
