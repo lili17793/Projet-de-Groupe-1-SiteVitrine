@@ -270,7 +270,7 @@ figure:hover figcaption {
 .mini_map .text-right .col {
   text-align: left; }
 
-/*Button Pulse */
+/* Button Pulse */
 
 .button {
   border-radius: 999em;
@@ -327,7 +327,9 @@ figure:hover figcaption {
 
 .buttonPulseMobile {
   display: none; }
+/* Fin Button Pulse */
 
+/* Barre info */
 .infoBarPerso {
   background-color: #2e3131;
   color: #fff;
@@ -338,7 +340,9 @@ figure:hover figcaption {
   .infoBarPerso #infobar_nbPhoto,
   .infoBarPerso #infobar_nbKm,
   .infoBarPerso #infobar_nbMonum {
-    font-size: 1.5em; }
+		font-size: 1.5em;
+		color: #e99468;}
+		
   .infoBarPerso .infoBar_Col_Left:after,
   .infoBarPerso .infoBar_Col_center:after {
     content: "";
