@@ -4,7 +4,7 @@ body {
 
   body {
     background-color: #FFF;
-    font-family: "Space Mono", monospace, Helvetica, sans-serif; }
+    font-family: 'Nunito Sans', sans-serif; }
 
 section img {
   width: 100%;
@@ -209,6 +209,7 @@ figure:hover figcaption {
 
 /*-------------------*/
 
+/* -------------- NAVBAR --------------*/
 .navbar-brand img {
   width: 50px;
   margin: 5%; }
@@ -224,6 +225,8 @@ figure:hover figcaption {
 
 .nav-link:hover {
   color: #e99468 !important; }
+
+/*-------------- MAP PARIS --------------*/
 
 .mini_map img {
   width: 60vw; }
@@ -270,7 +273,7 @@ figure:hover figcaption {
 .mini_map .text-right .col {
   text-align: left; }
 
-/* Button Pulse */
+/*-------------- Button Pulse --------------*/
 
 .button {
   border-radius: 999em;
@@ -327,22 +330,22 @@ figure:hover figcaption {
 
 .buttonPulseMobile {
   display: none; }
-/* Fin Button Pulse */
 
-/* Barre info */
+/*-------------- Barre info --------------*/
 .infoBarPerso {
   background-color: #2e3131;
   color: #fff;
   font-size: 1.2em; }
   .infoBarPerso p {
     margin-bottom: 5%;
-    margin-top: 5%; }
+		margin-top: 5%;
+		font-size: 1.3em }
   .infoBarPerso #infobar_nbPhoto,
   .infoBarPerso #infobar_nbKm,
   .infoBarPerso #infobar_nbMonum {
-		font-size: 1.5em;
+		font-size: 1.4em;
 		color: #e99468;}
-		
+
   .infoBarPerso .infoBar_Col_Left:after,
   .infoBarPerso .infoBar_Col_center:after {
     content: "";
@@ -382,7 +385,7 @@ figure:hover figcaption {
   .map_nb_photos {
     font-size: 0.75em; }
   .infoBarPerso {
-    font-size: 1.2em; } }
+    font-size: 1.4em; } }
 
 @media screen and (min-width: 1140px) {
   .text-left .col,
@@ -396,7 +399,7 @@ figure:hover figcaption {
 /* FOOTER */
 
 
-.footer { 
+.footer {
     color: black;
     margin-top: 55px;
 }
@@ -423,7 +426,7 @@ figure:hover figcaption {
 	width: 30px;
 }
 
-@media (max-width: 830px) { 
+@media (max-width: 845px) {
 	.taille_image{
 		width: 30px; }
 
@@ -432,7 +435,7 @@ figure:hover figcaption {
 		margin-left: 35px;
 		margin-right: 35px;}}
 
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
 	.taille_image{
 		width: 25px; }
 
@@ -441,7 +444,7 @@ figure:hover figcaption {
 		margin-left: 35px;
 		margin-right: 35px;}}
 
-@media (max-width: 416px) { 
+@media (max-width: 416px) {
 	.taille_image{
 		width: 25px; }
 

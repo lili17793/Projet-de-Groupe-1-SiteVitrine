@@ -199,7 +199,7 @@ h4 {
 
 @media (max-width: 768px) { 
     .event_badge{
-        width: 80%;
+        width: 90%;
         align-items: center;
     }
     .event_title, .event_address, .event_hour {

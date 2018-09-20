@@ -1,0 +1,1253 @@
+<!DOCTYPE>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Halant" rel="stylesheet">
+  <!-- CSSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Wildo Coda</title>
+</head>
+
+<body>
+  <!-- HEADER NAVBAR-->
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #2e3131;">
+    <a class="navbar-brand ml-4" href="home.html">Wildo <img src="images/logo.png" alt="Logo"> Coda</a>
+    <button id="collapsible" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="images/menuIcon.svg" alt="" id="buttonNavBarPerso"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="home.html">Accueil <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="bio.html">Bio</a>
+        <a class="nav-item nav-link" href="agenda.html">Agenda</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- -->
+  <!-- MINI MAP PARIS -->
+  <!--  -->
+  <div class="container-fluid no-gutters mt-3 mb-3 mini_map">
+    <div class="row justify-content-center align-items-center">
+      <!-- Colonne principale gauche -->
+      <div class="col text-left d-none d-sm-block">
+        <!-- d-none d-md-block permet de masquer colonne sur ecran xs et md -->
+        <div class="row justify-content-end mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-l"><a id="linkArcTriomphe" href="#arc-section" onmouseenter='showMapMonument("ArcTriomphe")'
+                onmouseleave='hideMapMonument("ArcTriomphe")'>Arc de triomphe</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col mr-2">
+              <hr>
+            </div>
+            <div class="col-auto map_nb_photos">11 photos</div>
+          </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-l"><a id="linkColonneJuillet" href="#colonne-section" onmouseenter='showMapMonument("ColonneJuillet")'
+                onmouseleave='hideMapMonument("ColonneJuillet")'>Colonne de Juillet</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col mr-2">
+              <hr>
+            </div>
+            <div class="col-auto map_nb_photos">6 photos</div>
+          </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-l"><a id="linkMuseeLouvre" href="#musee-section" onmouseenter='showMapMonument("MuseeLouvre")'
+                onmouseleave='hideMapMonument("MuseeLouvre")'>Musée du Louvre</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col mr-2">
+              <hr>
+            </div>
+            <div class="col-auto map_nb_photos">12 photos</div>
+          </div>
+        </div>
+        <div class="row justify-content-end mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-l"><a id="linkNotreDame" href="#notredame-section" onmouseenter='showMapMonument("NotreDame")'
+                onmouseleave='hideMapMonument("NotreDame")'>Notre-Dame de Paris</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col mr-2">
+              <hr>
+            </div>
+            <div class="col-auto map_nb_photos">8 photos</div>
+          </div>
+        </div>
+      </div>
+      <!-- Map Paris -->
+      <div class="col-xs-sm col-md-lg-xl-8 ml-3 mr-3 ">
+        <img class="map" src="images/MapParis.png" alt="map-paris" id="mapParisBase" usemap="#areaMapParis">
+        <map name="areaMapParis">
+          <area shape="poly" coords="290,178,367,155,406,184,407,280,292,255" href="#arc-section" alt="Arc"
+            onmouseenter='showMapMonument("ArcTriomphe")' onmouseleave='hideMapMonument("ArcTriomphe")'>
+          <area shape="poly" coords="552,174,566,157,584,174,588,282,549,282" href="#colonne-section" alt="Colonne"
+            onmouseenter='showMapMonument("ColonneJuillet")' onmouseleave='hideMapMonument("ColonneJuillet")'>
+          <area shape="poly" coords="755,271,832,338,689,335" href="#musee-section" alt="Louvre" onmouseenter='showMapMonument("MuseeLouvre")'
+            onmouseleave='hideMapMonument("MuseeLouvre")'>
+          <area shape="poly" coords="915,284,943,279,939,306,950,306,952,277,981,272,998,395,897,393" href="#notredame-section"
+            alt="Notre Dame" onmouseenter='showMapMonument("NotreDame")' onmouseleave='hideMapMonument("NotreDame")'>
+          <area shape="poly" coords="411,289,439,264,448,274,464,268,494,241,522,260,521,310,410,305" href="#petitp-section"
+            alt="Petit Palais" onmouseenter='showMapMonument("PetitPalais")' onmouseleave='hideMapMonument("PetitPalais")'>
+          <area shape="poly" coords="355,329,520,328,520,375,419,344,359,349" href="#pont-section" alt="Pont Alexandre 3"
+            onmouseenter='showMapMonument("PontAlexandre")' onmouseleave='hideMapMonument("PontAlexandre")'>
+          <area shape="poly" coords="714,192,790,113,829,168,843,210,710,210" href="#sacre-section" alt="Sacre Coeur"
+            onmouseenter='showMapMonument("SacreCoeur")' onmouseleave='hideMapMonument("SacreCoeur")'>
+          <area shape="poly" coords="185,386,209,334,219,254,229,330,254,389" href="#tour-section" alt="Tour Eiffel"
+            onmouseenter='showMapMonument("TourEiffel")' onmouseleave='hideMapMonument("TourEiffel")'>
+        </map>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- Colonne principale droite -->
+      <div class="col text-right d-none d-sm-block">
+        <!-- d-none d-md-block permet de masquer colonne sur ecran xs et md-->
+        <div class="row justify-content-start mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-r"><a id="linkPetitPalais" href="#petitp-section" onmouseenter='showMapMonument("PetitPalais")'
+                onmouseleave='hideMapMonument("PetitPalais")'>Le Petit Palais</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col-auto map_nb_photos">12 photos</div>
+            <div class="col ml-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-r"><a id="linkPontAlexandre" href="#pont-section" onmouseenter='showMapMonument("PontAlexandre")'
+                onmouseleave='hideMapMonument("PontAlexandre")'>Pont Alexandre III</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col-auto map_nb_photos">9 photos</div>
+            <div class="col ml-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-r"><a id="linkSacreCoeur" href="#sacre-section" onmouseenter='showMapMonument("SacreCoeur")'
+                onmouseleave='hideMapMonument("SacreCoeur")'>Sacré Cœur</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col-auto map_nb_photos">11 photos</div>
+            <div class="col ml-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mb-2">
+          <div class="row no-gutters">
+            <div class="col map_name_mon-r"><a id="linkTourEiffel" href="#tour-section" onmouseenter='showMapMonument("TourEiffel")'
+                onmouseleave='hideMapMonument("TourEiffel")'>Tour Eiffel</a></div>
+          </div>
+          <div class="row w-100 align-items-center no-gutters">
+            <div class="col-auto map_nb_photos">11 photos</div>
+            <div class="col ml-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button mobile-->
+    <div class="row buttonPulseMobile">
+      <div class="col d-flex justify-content-center">
+        <button class="button button--pluse"></button>
+      </div>
+      <div class="col mt-3 d-flex justify-content-center">
+        <p>Choisis un monument</p>
+      </div>
+    </div>
+  </div>
+  <!-- Infos barre -->
+  <div class="container-fluid infoBarPerso">
+    <div class="row h-auto justify-content-around text-center">
+      <div class="col-4 align-self-center infoBar_Col_Left">
+        <p>Photos prises dans Paris</p>
+        <p id="infobar_nbPhoto">13265</p>
+      </div>
+      <div class="col-4 align-self-center infoBar_Col_center">
+        <p>Kms parcourus dans Paris</p>
+        <p id="infobar_nbKm">6827</p>
+      </div>
+      <div class="col-4 align-self-center">
+        <p>Monuments visités</p>
+        <p id="infobar_nbMonum">19</p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!-- PART GALLERY -->
+  <!--  -->
+  <div class="container-fluid">
+    <!-- ARC DE TRIOMPHE -->
+    <!-- ARC DE TRIOMPHE -->
+    <!-- ARC DE TRIOMPHE -->
+    <!-- ARC DE TRIOMPHE -->
+    <section id="arc-section">
+      <div class="row">
+        <div class="col-xl-9 col-md-12" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/arc00.jpg" alt="Arc de Triomphe" class="miniature" onclick="activate(0, '.c1')">
+        </div>
+        <div class="col-xl-3 align-self-center col-md-12 ">
+          <h3 class="titlepictureright">Arc de triomphe</h3>
+          <div class="containerfextablette">
+            <p class="text">L’étoile de Paris est aussi célèbre pour son immense rond-point que pour ses différentes
+              branches : avenue Foch, avenue de la Grande Armée... il annonce surtout le départ de l’avenue des
+              Champs-Elysées, longue de 2 kilomètres et connue en
+              France comme “la plus belle avenue du monde”.</p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Arc de Triomphe</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c1">
+                    <img src="images/arc00.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc01.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc03.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc04.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc05.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc06.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc07.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc08.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc09.jpg">
+                  </div>
+                  <div class="carousel-item c1">
+                    <img src="images/arc10.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc01.jpg" class="miniature" id="test" onclick="activate(1, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc03.jpg" class="miniature" onclick="activate(2, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc04.jpg" class="miniature" onclick="activate(3, '.c1')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc05.jpg" class="miniature" onclick="activate(4, '.c1')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc04.jpg" class="miniature collapse divtohide1" onclick="activate(3, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc05.jpg" class="miniature collapse divtohide1" onclick="activate(4, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc06.jpg" class="miniature collapse divtohide1" onclick="activate(5, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc07.jpg" class="miniature collapse divtohide1" onclick="activate(6, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc08.jpg" class="miniature collapse divtohide1" onclick="activate(7, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc09.jpg" class="miniature collapse divtohide1" onclick="activate(8, '.c1')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal1">
+          <img src="images/m-arc10.jpg" class="miniature collapse divtohide1" onclick="activate(9, '.c1')">
+        </div>
+      </div>
+      <div id="button-container1" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button1" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide1"
+            aria-expanded="false" aria-controls=".divtohide1">
+            <i id="button-content1" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- COLONNE DE JUILLET -->
+    <!-- COLONNE DE JUILLET -->
+    <!-- COLONNE DE JUILLET -->
+    <!-- COLONNE DE JUILLET -->
+    <section id="colonne-section">
+      <div class="row">
+        <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/colonne00.jpg" alt="Colonne de Juillet" onclick="activate(0, '.c2')">
+        </div>
+        <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
+          <h3 class="titlepictureleft">Colonne de Juillet</h3>
+          <div class="containerfextablette">
+            <p class="text">La colonne de Juillet est une colonne élevée sur la place de la Bastille à Paris, entre
+              1835 et 1840 en commémoration des Trois Glorieuses. Ces trois journées de la révolution de juillet 1830
+              amenèrent la chute de Charles X et du régime de restauration, puis l'instauration de la monarchie de
+              juillet, avec le règne de Louis-Philippe Ier, duc d'Orléans, devenu roi des Français.</p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Colonne de Juillet</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c2">
+                    <img src="images/colonne00.jpg">
+                  </div>
+                  <div class="carousel-item c2">
+                    <img src="images/colonne01.jpg">
+                  </div>
+                  <div class="carousel-item c2">
+                    <img src="images/colonne02.jpg">
+                  </div>
+                  <div class="carousel-item c2">
+                    <img src="images/colonne03.jpg">
+                  </div>
+                  <div class="carousel-item c2">
+                    <img src="images/colonne04.jpg">
+                  </div>
+                  <div class="carousel-item c2">
+                    <img src="images/colonne05.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne01.jpg" class="miniature" id="test" onclick="activate(1, '.c2')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne02.jpg" class="miniature" onclick="activate(2, '.c2')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne03.jpg" class="miniature" onclick="activate(3, '.c2')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne04.jpg" class="miniature" onclick="activate(4, '.c2')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne03.jpg" class="miniature collapse divtohide2" onclick="activate(3, '.c2')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne04.jpg" class="miniature collapse divtohide2" onclick="activate(4, '.c2')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal2">
+          <img src="images/m-colonne05.jpg" class="miniature collapse divtohide2" onclick="activate(5, '.c2')">
+        </div>
+      </div>
+      <div id="button-container2" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button2" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide2"
+            aria-expanded="false" aria-controls=".divtohide2">
+            <i id="button-content2" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- MUSEE DU LOUVRE -->
+    <!-- MUSEE DU LOUVRE -->
+    <!-- MUSEE DU LOUVRE -->
+    <!-- MUSEE DU LOUVRE -->
+    <section id="musee-section">
+      <div class="row">
+        <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre03.jpg" alt="Musée du Louvre" onclick="activate(3, '.c3')">
+        </div>
+        <div class="col-xl-3  align-self-center  col-md-12">
+          <h3 class="titlepictureright">Musée du Louvre</h3>
+          <div class="containerfextablette">
+            <p class="text">Le musée du Louvre, inauguré en 1793 sous l'appellation Muséum central des arts de la
+              République dans le palais du Louvre, ancienne résidence royale située au centre de Paris, est aujourd'hui
+              le plus grand musée d'art et d'antiquités au monde. Sa surface d'exposition est de 72 735 m2</p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Louvre</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c3">
+                    <img src="images/louvre00.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre01.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre02.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre03.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre04.JPG">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre05.JPG">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre06.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre07.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre08.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre09.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre10.jpg">
+                  </div>
+                  <div class="carousel-item c3">
+                    <img src="images/louvre11.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre01.jpg" class="miniature" id="test" onclick="activate(1, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre02.jpg" class="miniature" onclick="activate(2, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre03.jpg" class="miniature" onclick="activate(3, '.c3')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre04.jpg" class="miniature" onclick="activate(4, '.c3')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre03.jpg" class="miniature collapse divtohide3" onclick="activate(3, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre04.jpg" class="miniature collapse divtohide3" onclick="activate(4, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre05.jpg" class="miniature collapse divtohide3" onclick="activate(5, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre06.jpg" class="miniature collapse divtohide3" onclick="activate(6, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre07.jpg" class="miniature collapse divtohide3" onclick="activate(7, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre08.jpg" class="miniature collapse divtohide3" onclick="activate(8, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3">
+          <img src="images/m-louvre09.jpg" class="miniature collapse divtohide3" onclick="activate(9, '.c3')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3" onclick="activate(10, '.c3')">
+          <img src="images/m-louvre10.jpg" class="miniature collapse divtohide3">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal3" onclick="activate(11, '.c3')">
+          <img src="images/m-louvre11.jpg" class="miniature collapse divtohide3">
+        </div>
+      </div>
+      <div id="button-container3" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button3" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide3"
+            aria-expanded="false" aria-controls=".divtohide3">
+            <i id="button-content3" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- NOTRE DAME DE PARIS-->
+    <!-- NOTRE DAME DE PARIS-->
+    <!-- NOTRE DAME DE PARIS-->
+    <!-- NOTRE DAME DE PARIS-->
+    <section id="notredame-section">
+      <div class="row">
+        <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame00.jpg" alt="Notre-Dame de Paris" onclick="activate(0, '.c4')">
+        </div>
+        <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
+          <h3 class="titlepictureleft">Notre-Dame de Paris</h3>
+          <div class="containerfextablette">
+            <p class="text">La cathédrale Notre-Dame de Paris, en forme courte Notre-Dame, est la cathédrale de
+              l'archidiocèse de Paris, en France. Elle est située dans l'est de l'île de la Cité, dans le 4e
+              arrondissement de Paris. Sa façade occidentale domine le parvis Notre-Dame - place Jean-Paul-II. </p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Notre Dame</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl4" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c4">
+                    <img src="images/notredame00.jpg"">
+                                      </div>
+                                      <div class="
+                      carousel-item c4">
+                    <img src="images/notredame01.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame02.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame03.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame04.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame05.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame06.jpg">
+                  </div>
+                  <div class="carousel-item c4">
+                    <img src="images/notredame07.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl4" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl4" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame01.jpg" class="miniature" id="test" onclick="activate(1, '.c4')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame02.jpg" class="miniature" onclick="activate(2, '.c4')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame03.jpg" class="miniature" onclick="activate(3, '.c4')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame04.jpg" class="miniature" onclick="activate(4, '.c4')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame03.jpg" class="miniature collapse divtohide4" onclick="activate(3, '.c4')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame04.jpg" class="miniature collapse divtohide4" onclick="activate(4, '.c4')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal4">
+          <img src="images/m-notredame05.jpg" class="miniature collapse divtohide4" onclick="activate(5, '.c4')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal4" onclick="activate(6, '.c4')">
+          <img src="images/m-notredame06.jpg" class="miniature collapse divtohide4">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal4" onclick="activate(7, '.c4')">
+          <img src="images/m-notredame07.jpg" class="miniature collapse divtohide4">
+        </div>
+      </div>
+      <div id="button-container4" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button4" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide4"
+            aria-expanded="false" aria-controls=".divtohide4">
+            <i id="button-content4" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- LE PETIT PALAIS -->
+    <!-- LE PETIT PALAIS -->
+    <!-- LE PETIT PALAIS -->
+    <!-- LE PETIT PALAIS -->
+    <section id="petitp-section">
+      <div class="row">
+        <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais00.jpg" alt="Le Petit Palais" onclick="activate(0, '.c5')">
+        </div>
+        <div class="col-xl-3  align-self-center  col-md-12 ">
+          <h3 class="titlepictureright">Le Petit Palais</h3>
+          <div class="containerfextablette">
+            <p class="text">Le Petit Palais, construit à l'occasion de l'Exposition universelle de 1900 par
+              l'architecte Charles Girault1, abrite le musée des Beaux-Arts de la ville de Paris. Il est situé à Paris
+              8e, avenue Winston-Churchill, face au Grand Palais. </p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Petit Palais</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl5" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais00.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais01.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais02.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais03.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais04.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais05.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais06.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais07.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais08.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais09.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais10.jpg">
+                  </div>
+                  <div class="carousel-item c5">
+                    <img src="images/petitpalais11.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl5" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl5" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais01.jpg" class="miniature" id="test" onclick="activate(1, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais02.jpg" class="miniature" onclick="activate(2, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais03.jpg" class="miniature" onclick="activate(3, '.c5')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais04.jpg" class="miniature" onclick="activate(4, '.c5')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais03.jpg" class="miniature collapse divtohide5" onclick="activate(3, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais04.jpg" class="miniature collapse divtohide5" onclick="activate(4, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais05.jpg" class="miniature collapse divtohide5" onclick="activate(5, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais06.jpg" class="miniature collapse divtohide5" onclick="activate(6, '.c5')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal5">
+          <img src="images/m-petitpalais07.jpg" class="miniature collapse divtohide5" onclick="activate(7, '.c5')">
+        </div>
+      </div>
+      <div id="button-container5" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button5" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide5"
+            aria-expanded="false" aria-controls=".divtohide5">
+            <i id="button-content5" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- Pont Alexandre-III-->
+    <!-- Pont Alexandre-III-->
+    <!-- Pont Alexandre-III-->
+    <!-- Pont Alexandre-III-->
+    <section id="pont-section">
+      <div class="row">
+        <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont00.jpg" alt="Pont Alexandre-III" onclick="activate(0, '.c6')">
+        </div>
+        <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
+          <h3 class="titlepictureleft">Pont Alexandre-III</h3>
+          <div class="containerfextablette">
+            <p class="text">Le pont était destiné à symboliser l'amitié franco-russe, instaurée par la signature de
+              l'alliance conclue en 1891 entre l’empereur Alexandre III (1845-1894) et le président de la République
+              française Sadi Carnot. La première pierre fut posée par le tsar Nicolas II de Russie, l'impératrice
+              Alexandra Fedorovna et le président Félix Faure le 7 octobre 1896.</p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Pont Alexandre III</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl6" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c6">
+                    <img src="images/pont00.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont01.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont02.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont03.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont04.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont05.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont06.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont07.jpg">
+                  </div>
+                  <div class="carousel-item c6">
+                    <img src="images/pont08.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl6" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl6" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont01.jpg" class="miniature" id="test" onclick="activate(1, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont02.jpg" class="miniature" onclick="activate(2, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont03.jpg" class="miniature" onclick="activate(3, '.c6')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont04.jpg" class="miniature" onclick="activate(4, '.c6')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont03.jpg" class="miniature collapse divtohide6" onclick="activate(3, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont04.jpg" class="miniature collapse divtohide6" onclick="activate(4, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont05.jpg" class="miniature collapse divtohide6" onclick="activate(5, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont06.jpg" class="miniature collapse divtohide6" onclick="activate(6, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont07.jpg" class="miniature collapse divtohide6" onclick="activate(7, '.c6')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal6">
+          <img src="images/m-pont08.jpg" class="miniature collapse divtohide6" onclick="activate(8, '.c6')">
+        </div>
+      </div>
+      <div id="button-container6" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button6" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide6"
+            aria-expanded="false" aria-controls=".divtohide6">
+            <i id="button-content6" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- SACRE COEUR -->
+    <!-- SACRE COEUR -->
+    <!-- SACRE COEUR -->
+    <!-- SACRE COEUR -->
+    <section id="sacre-section">
+      <div class="row">
+        <div class="col-xl-9   col-md-12" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur00.jpg" alt="Basilique du Sacré-Cœur" onclick="activate(0, '.c7')">
+        </div>
+        <div class="col-xl-3  align-self-center  col-md-12 ">
+          <h3 class="titlepictureright">Basilique du Sacré-Cœur</h3>
+          <div class="containerfextablette">
+            <p class="text">La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la
+              butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris, est un édifice
+              religieux parisien majeur, « sanctuaire de l'adoration eucharistique et de la miséricorde divine » et
+              propriété de l'archidiocèse de Paris </p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Sacré Coeur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl7" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur00.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur01.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur02.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur03.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur04.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur05.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur06.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur07.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur08.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur09.jpg">
+                  </div>
+                  <div class="carousel-item c7">
+                    <img src="images/sacrecoeur10.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl7" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl7" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur01.jpg" class="miniature" id="test" onclick="activate(1, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur02.jpg" class="miniature" onclick="activate(2, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur03.jpg" class="miniature" onclick="activate(3, '.c7')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur04.jpg" class="miniature" onclick="activate(4, '.c7')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur03.jpg" class="miniature collapse divtohide7" onclick="activate(3, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur04.jpg" class="miniature collapse divtohide7" onclick="activate(4, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur05.jpg" class="miniature collapse divtohide7" onclick="activate(5, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur06.jpg" class="miniature collapse divtohide7" onclick="activate(6, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur07.jpg" class="miniature collapse divtohide7" onclick="activate(7, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur08.jpg" class="miniature collapse divtohide7" onclick="activate(8, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur09.jpg" class="miniature collapse divtohide7" onclick="activate(9, '.c7')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal7">
+          <img src="images/m-sacrecoeur10.jpg" class="miniature collapse divtohide7" onclick="activate(10, '.c7')">
+        </div>
+      </div>
+      <div id="button-container7" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button7" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide7"
+            aria-expanded="false" aria-controls=".divtohide7">
+            <i id="button-content7" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- TOUR EIFFEL-->
+    <!-- TOUR EIFFEL-->
+    <!-- TOUR EIFFEL-->
+    <!-- TOUR EIFFEL-->
+    <section id="tour-section">
+      <div class="row">
+        <div class="col-xl-9 order-xl-2  col-md-12 order-md-1" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel00.jpg" alt="Tour Eiffel" onclick="activate(0, '.c8')">
+        </div>
+        <div class="col-xl-3 order-xl-1 align-self-center  col-md-12 order-md-2 ">
+          <h3 class="titlepictureleft">Tour Eiffel</h3>
+          <div class="containerfextablette">
+            <p class="text">La tour Eiffel Écouter est une tour de fer puddlé de 324 mètres de hauteur (avec antennes)o
+              1 située à Paris, à l’extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le 7e
+              arrondissement. Son adresse officielle est 5, avenue Anatole-France2. Construite par Gustave Eiffel et
+              ses collaborateurs pour l’Exposition universelle de Paris de 1889, et initialement nommée « tour de 300
+              mètres », ce monument est devenu le symbole de la capitale française, et un site touristique de premier
+              plan : il s’agit du second site culturel français payant le plus visité en 2011, avec 7,1 millions de
+              visiteurs dont 75 % d'étrangers en 2011, la cathédrale Notre-Dame de Paris étant en tête des monuments à
+              l'accès libre avec 13,6 millions de visiteurs estimés3 mais il reste le monument payant le plus visité au
+              monde4,note 1. Depuis son ouverture au public, elle a accueilli plus de 300 millions de visiteurs.</p>
+            <figure>
+              <img class="minimap" src="images/MapParis.png" alt="minimap" onclick="toTop()">
+              <figcaption>Carte</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="monmodal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Tour Eiffel</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="ctrl8" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel00.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel01.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel02.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel03.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel04.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel05.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel06.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel07.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel08.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel09.jpg">
+                  </div>
+                  <div class="carousel-item c8">
+                    <img src="images/toureiffel10.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#ctrl8" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ctrl8" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters">
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel01.jpg" class="miniature" id="test" onclick="activate(1, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel02.jpg" class="miniature" onclick="activate(2, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 d-none d-sm-block" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel03.jpg" class="miniature" onclick="activate(3, '.c8')">
+        </div>
+        <div class="col-lg-3 d-none d-lg-block" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel04.jpg" class="miniature" onclick="activate(4, '.c8')">
+        </div>
+      </div>
+      <div class="row littlepictures no-gutters" id="ancre">
+        <div class="col-6 d-block d-sm-none" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel03.jpg" class="miniature collapse divtohide8" onclick="activate(3, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6 d-block d-lg-none" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel04.jpg" class="miniature collapse divtohide8" onclick="activate(4, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel05.jpg" class="miniature collapse divtohide8" onclick="activate(5, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel06.jpg" class="miniature collapse divtohide8" onclick="activate(6, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel07.jpg" class="miniature collapse divtohide8" onclick="activate(7, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel08.jpg" class="miniature collapse divtohide8" onclick="activate(8, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel09.jpg" class="miniature collapse divtohide8" onclick="activate(9, '.c8')">
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6" data-toggle="modal" data-target="#monmodal8">
+          <img src="images/m-toureiffel10.jpg" class="miniature collapse divtohide8" onclick="activate(10, '.c8')">
+        </div>
+      </div>
+      <div id="button-container8" class="row no-gutters">
+        <div class="col-12">
+          <button id="open-close-button8" class="btn btn-light btn-lg" data-toggle="collapse" data-target=".divtohide8"
+            aria-expanded="false" aria-controls=".divtohide8">
+            <i id="button-content8" class="fa fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="d-flex">
+          <ul class="list-inline">
+            <li class="list-inline-item logo">
+              <a href="http://pinterest.com" title="Suivez-moi sur pinterest !"><img class="taille_image" src="images/pinterest.png"
+                  alt="pinterest" /></a>
+            </li>
+            <li class="list-inline-item logo">
+              <a href="http://youtube.com" title="Suivez-moi sur youtube !"><img class="taille_image" src="images/youTube.png"
+                  alt="youTube" /></a>
+            </li>
+            <li class="list-inline-item logo">
+              <a href="http://twitter.com" title="Suivez-moi sur twitter !"><img class="taille_image" src="images/twitter.png"
+                  alt="twitter" /></a>
+            </li>
+            <li class="list-inline-item logo">
+              <a href="http://facebook.com" title="Suivez-moi sur facebook !"><img class="taille_image" src="images/facebook.png"
+                  alt="facebook" /></a>
+            </li>
+            <li class="list-inline-item logo">
+              <a href="http://instagram.com" title="Suivez-moi sur instagram !"><img class="taille_image" src="images/instagram.png"
+                  alt="instagram" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <div class="footer-copyright text-center py-3">© 2018 Wildo Coda - All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/mapParis.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <script type="text/javascript" src="js/jquery.rwdImageMaps.js"></script>
+  </div>
+</body>
+
+</html>
