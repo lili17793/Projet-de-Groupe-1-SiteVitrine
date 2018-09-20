@@ -10,22 +10,22 @@ const fHideSupplMonth = () => {
 };
 
 
-//When the window is loaded
-$(window).on("load", function() {
-  //display the 2 first months
+// //When the window is loaded
+// $(window).on("load", function() {
+//   //display the 2 first months
 
-  //get all the .month divs
-  const arrMonth = $(".month");
-  if (arrMonth.length > 2) {
-    //if there are more than 2, hide all the months except for the 2 first ones
-    fHideSupplMonth();
-  } else {
-    //if there are 2 or less, no need to display the arrow that allow the visualization of the others
-    $('#arrow')[0].style.display = 'none'
-  }
+//   //get all the .month divs
+//   const arrMonth = $(".month");
+//   if (arrMonth.length > 2) {
+//     //if there are more than 2, hide all the months except for the 2 first ones
+//     fHideSupplMonth();
+//   } else {
+//     //if there are 2 or less, no need to display the arrow that allow the visualization of the others
+//     $('#arrow')[0].style.display = 'none'
+//   }
 
 
-});
+// });
 
 //Function allowing to scroll the window untill a given position
 const fScrollTo = (iIntPosition) => {
