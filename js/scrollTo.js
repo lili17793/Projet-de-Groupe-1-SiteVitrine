@@ -1,4 +1,4 @@
-$('a[href^="#"]').click(function(){
+$('area[href^="#"][href$="-section"], a[href^="#"][href$="-section"]').click(function(){
 	var the_id = $(this).attr("href");
 	if (the_id === '#') {
 		return;
