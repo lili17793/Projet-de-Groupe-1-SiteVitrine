@@ -45,7 +45,7 @@ p{
 }
 
 .bio_photo_wildo{
-	width:100%;
+	width:95%;
 	max-width: 375px;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
@@ -55,7 +55,7 @@ p{
 }
 
 .bio_photo_objectif{
-	width:100%;
+	width:95%;
 	max-width: 375px;
 	margin-top: 0;
 	position: absolute;
