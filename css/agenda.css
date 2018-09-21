@@ -1,3 +1,7 @@
+html {
+    visibility: hidden;
+}
+
 /*Header*/
 
 .navbar-brand img {
@@ -119,10 +123,6 @@ h4 {
 .event_address {
     text-decoration: none;
     outline:none;
-}
-
-.hide {
-    display:none;
 }
 
 .disabled {

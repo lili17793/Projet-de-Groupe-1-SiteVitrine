@@ -35,6 +35,8 @@ p{
 	font-family: "Nunito Sans";
 }
 
+
+
 .container_bio{
 	display: flex;
 	justify-content: center;
@@ -42,49 +44,45 @@ p{
 	/*border: 1px solid pink;*/
 }
 
-.bio_col_1_photo{
-	text-align: center;
-}
-
 .bio_photo_wildo{
-	width: 100%;
-	max-width: 450px;
+	max-width: 375px;
 	border-radius: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	z-index: 1;
+	opacity: 1;
+	transition: opacity 0.15s ease;
 
 }
 
 .bio_photo_objectif{
-	width: 100%;
-	max-width: 450px;
-	border-radius: 0%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	max-width: 375px;
+	margin-top: 0;
+	
 	position: absolute;
 	z-index: 2;
 	opacity: 0;
-	transition: opacity 0.15s ease-in;
+	transition: opacity 0.15s ease;
 }
 
-.bio_col_1_photo:hover .bio_photo_objectif{
+.bio_photo_objectif:hover{
 	opacity: 1;
 }
 
-.bio_col_1_photo:hover .bio_photo_wildo{
-	opacity: ;
-}
+/* .bio_photo_wildo:hover{
+	opacity: 0;
+} */
 
 .bio_col_2_content{
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 	max-width: 900px;
 }
 
 .bio_content{
 	margin-right: 50px;
 }
+
 
 .bio_col_3_reseaux{
 	text-align: center;
@@ -107,7 +105,6 @@ p{
 
 
 .footer {
-    
     color: black;
     margin-top: 55px;
 }
@@ -131,15 +128,15 @@ p{
 }
 
 .taille_image{
-	width: 30px;
+	width: 5vh;
 }
 
 @media (max-width: 830px) { 
 	.taille_image{
-		width: 30px; }
+		width: 5vh; }
 
 	.logo{
-		padding-top: 30px;
+		padding-top: 5vh;
 		margin-left: 35px;
 		margin-right: 35px;}}
 
@@ -148,7 +145,7 @@ p{
 		width: 25px; }
 
 	.logo{
-		padding-top: 30px;
+		padding-top: 5vh;
 		margin-left: 35px;
 		margin-right: 35px;}}
 

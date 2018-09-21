@@ -1,3 +1,18 @@
+$(document).ready(function () {
+  //display the 2 first months
+
+  //get all the .month divs
+  const arrMonth = $(".month");
+  if (arrMonth.length > 2) {
+    //if there are more than 2, hide all the months except for the 2 first ones
+    fHideSupplMonth();
+  } else {
+    //if there are 2 or less, no need to display the arrow that allow the visualization of the others
+    $('#arrow')[0].style.display = 'none'
+  }
+})
+
+
 //Function hiding and changing the classes of the other divs .month if there are more than 2
 const fHideSupplMonth = () => {
   const arrMonth = $(".month");
@@ -10,22 +25,12 @@ const fHideSupplMonth = () => {
 };
 
 
-// //When the window is loaded
-// $(window).on("load", function() {
-//   //display the 2 first months
+//When the window is loaded
+$(window).on("load", function() {
+  //prevent a flash of unstyled content when opening the window
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
 
-//   //get all the .month divs
-//   const arrMonth = $(".month");
-//   if (arrMonth.length > 2) {
-//     //if there are more than 2, hide all the months except for the 2 first ones
-//     fHideSupplMonth();
-//   } else {
-//     //if there are 2 or less, no need to display the arrow that allow the visualization of the others
-//     $('#arrow')[0].style.display = 'none'
-//   }
-
-
-// });
+});
 
 //Function allowing to scroll the window untill a given position
 const fScrollTo = (iIntPosition) => {
