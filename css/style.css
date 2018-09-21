@@ -280,13 +280,13 @@ figure:hover figcaption {
 
 .button {
   border-radius: 999em;
-  border: 1px solid #e99468;
+  border: 1px solid #ebbba3;
   color: white;
-  background: #e99468;
+  background: #ebbba3;
   outline: none;
-  width: 30px;
-  height: 30px;
-  font-size: 28px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
   display: inline-block;
   cursor: pointer;
   box-sizing: border-box; }
@@ -301,20 +301,20 @@ figure:hover figcaption {
       top: 0;
       left: 0;
       z-index: 1;
-      width: 30px;
-      height: 30px;
-      border: 3px solid #e99468; }
+      width: 25px;
+      height: 25px;
+      border: 3px solid #ebbba3; }
     .button--pluse::before {
       z-index: -1;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       background: inherit;
       opacity: .3;
       top: 0;
       left: 0;
-      animation: pluse .6s ease-in-out 0s infinite alternate; }
+      animation: pluse 1.5s ease-in-out 0s infinite alternate; }
     .button--pluse:hover::after {
-      animation: pluse-ring 1.5s ease-out 0s infinite; }
+      animation: pluse-ring 3s ease-out 0s infinite; }
 
 @keyframes pluse {
   0% {
@@ -337,8 +337,8 @@ figure:hover figcaption {
 /*-------------- Barre info --------------*/
 .infoBarPerso {
   background-color: #2e3131;
-  color: #fff;
-  font-size: 1.2em; }
+	color: #fff;
+	margin-bottom: 6%;}
   .infoBarPerso p {
     margin-bottom: 5%;
 		margin-top: 5%;
@@ -370,16 +370,16 @@ figure:hover figcaption {
     display: block; }
     .buttonPulseMobile p {
       color: #e99468;
-      font-size: 0.75em; } }
+      font-size: 0.9em; } }
 
 @media screen and (min-width: 575px) {
   .text-left .col,
   .text-right .col {
     font-size: 0.9em; }
   .map_nb_photos {
-    font-size: 0.7em; }
+    font-size: 0.75em; }
   .infoBarPerso {
-    font-size: 1em; } }
+    font-size: 0.75em; } }
 
 @media screen and (min-width: 960px) {
   .text-left .col,
@@ -388,14 +388,14 @@ figure:hover figcaption {
   .map_nb_photos {
     font-size: 0.75em; }
   .infoBarPerso {
-    font-size: 1.4em; } }
+    font-size: 0.95em; } }
 
 @media screen and (min-width: 1140px) {
   .text-left .col,
   .text-right .col {
     font-size: 1.25em; }
   .map_nb_photos {
-    font-size: 1em; } }
+    font-size: 1.1em; } }
 
 
 
