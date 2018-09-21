@@ -16,22 +16,22 @@ He loves Paris and wants to share it!
 
 
 ### Specifications :
-*3 pages minimum / 5 maximum
-*Wireframe
-*HTML / CSS
-*Framework BOOTSTRAP
-*News feed
-*Contact form
-*Git / GitHub
-*Royalty free images
+* 3 pages minimum / 5 maximum
+* Wireframe
+* HTML / CSS
+* Framework BOOTSTRAP
+* News feed
+* Contact form
+* Git / GitHub
+* Royalty free images
 
 ## Team : 
-*Barreto Widaad : https://github.com/didouche83
-*Bourgeois Elisa : https://github.com/elisabrgs
-*Chabot Olivier : https://github.com/olichab
-*Chaigneau Thomas : https://github.com/thomas-chaigneau
-*Dupoix Eleonore : https://github.com/eledx
-*Lucchini Elisa : https://github.com/lili17793
+* Barreto Widaad : https://github.com/didouche83
+* Bourgeois Elisa : https://github.com/elisabrgs
+* Chabot Olivier : https://github.com/olichab
+* Chaigneau Thomas : https://github.com/thomas-chaigneau
+* Dupoix Eleonore : https://github.com/eledx
+* Lucchini Elisa : https://github.com/lili17793
 
 
 
