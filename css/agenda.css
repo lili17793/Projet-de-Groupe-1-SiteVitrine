@@ -28,13 +28,13 @@ html {
 /*Headers*/
 h1 {
     font-family: Halant;
-    font-size: 35px;
+    font-size: 27px;
     font-style: bold;
 }
 
 h2 {
     font-family: "Nunito Sans";
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 400;
     font-style: normal;
 }
@@ -96,6 +96,15 @@ h4 {
     border-radius: 50%;
 }
 
+.titre{
+	font-family: 'Halant', serif;
+	text-align: center;
+	margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 32px;
+    font-weight: 0;
+}
+
 /*Event div*/
 .date, .event_title, .event_hour, .wrapper_badge {
     color: rgb(82, 82, 82);
@@ -103,12 +112,29 @@ h4 {
 
 .date_month, .event_address {
     color: rgb(196, 196, 196);
+    font-size: 15px;
 }
 
 .event_title, .event_address, .event_hour, .wrapper_badge {
     display: flex;
     padding: 5px;
     align-items: center;
+    /* color:blue; */
+}
+
+.wrapper_badge {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.event_title {
+    color:purple;
+    font-size: 20px;
+}
+
+.event_address, {
+    font-size: 15px;
+    color: orange;
 }
 
 .event_time, .event_badge, .event_description {
@@ -117,12 +143,6 @@ h4 {
 
 .event_title {
     text-decoration: none;
-
-}
-
-.event_address {
-    text-decoration: none;
-    outline:none;
 }
 
 .disabled {
